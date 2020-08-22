@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Copied from https://getbootstrap.com/docs/3.3/getting-started/ -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+
+    <title>Latitude effect on Weather</title>
+   
+</head>
+<body class="body">
+
+<!-- Create containers-->
+<!--Begin div classes-->
+
+<body>
+        <nav class="navbar navbar-default">
+                <div class="container">  
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="landing.html"> 
+                        <span class="nav-color navbaractive">Latitude</span></a>
+                    </div>
+                    
+        
+                    
+                    <div class="nav navbar-nav navbar-right">
+                        <!--DROP DOWN NAV-->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="maxtemperature.html">Max Temperature</a></li>
+                                <li><a href="humidity.html">Humidity</a></li>
+                                <li><a href="cloudiness.html">Cloudiness</a></li>
+                                <li><a href="windspeed.html">Wind Speed</a></li>
+                            </ul>
+                        </li>
+                        <!--END DROP DOWN NAV-->
+
+                        <!--OTHER NAV-->
+                        <li><a href="comparison.html"> Comparison</a></li>
+                        <li><a href="data.html"> Data</a></li>           
+                        <!--OTHER NAV-->                                
+                    </div>
+        
+                </div>      
+            </nav>
+            <!--DIVIDER ROWS-->
+ 
+    
+
+        <div class= "container">
+            <div class= "row">
+                <div class= "col-md-7">
+                    <div class="main-box whiteback">
+                    <h1>Summary: Latitude vs Weather</h1>
+                    <hr>
+                    <div id="summarytext">
+                        <img id= "landingimage" src= "Images/latitude_vs_temperature_S.png" alt= "Temp vs Latitude">
+                        <p>
+                            The purpose of the project was to visualise the impact of the latitude on four different weather features:
+                            Max Temperature, Cloudiness, Wind Speed and Humidity. 
+                            More than 500 cities across the world were randomly selected through a Python library representing a sizable sample. 
+                            <br><br>
+                            Once the sample of cities was consolidated showing their coordinates, the four weather features were retrived for each city using the OpenWeatherMap API.
+                            The visulizations were reproduced using Matplotlib showing scatter plots of the whole sample comparing the latitude with each weather feature.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class= "col-md-5">
+                    <div class= "side-box">
+                    <h2 class= "main-pg-subheader">Visualisations</h2>
+                    <hr>
+                    <div class= "sidebar">
+                        <a href= "maxtemperature.html"><img id= "side-img1" src="Images/latitude_vs_temperature_S.png" alt= "Temp vs. Latitude"></a>
+                        <a href= "humidity.html"><img id= "side-img2" src= "Images/latitude_vs_humidity_S.png", alt= "Humidity vs. Latitude"></a>
+                        <a href= "cloudiness.html"><img id= "side-img3" src= "Images/latitude_vs_clouds_S.png", alt= "Cloudiness vs. Latitude"></a>
+                        <a href= "windspeed.html"><img id= "side-img4" src= "Images/latitude_vs_winds_S.png", alt= "Wind Speed vs. Latitude"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+<!--END DIV CLASSES-->
+
+</body>
+ 
+</html>

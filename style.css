@@ -1,0 +1,210 @@
+.body{
+    background-color: rgba(236, 234, 234, 0.993)
+}
+.navbaractive {
+    font-weight: bold;
+    background-color: #4e79d6;
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+    
+}
+
+.stronger{
+    font-weight: bold;
+}
+
+.firstimage {
+    width: 20%; 
+    float: left; 
+    margin : 5px;
+    src: url("Images/latitude_vs_temperature_S.png")
+
+}
+
+.whiteback{
+    background-color: white;
+}
+
+.text {
+    float: right;
+}
+
+.navbar-default{
+    background-color: white;
+    color: rgba(238, 232, 232, 0.897)
+}
+.navbar-default .navbar-nav .active a{
+    background-color: #4e79d6;
+    color: white;
+}
+
+h1{
+    color: #4e79d6;
+    font-size: 30px;
+    font-family: Arial, Helvetica, Arial
+}
+
+h2{
+    color: #4e79d6;
+    font-size: 30px;
+    font-family: Arial, Helvetica, Arial
+}
+
+.dataframe{
+    border: 1px; 
+    border-collapse: collapse;
+}
+
+#landingimage{
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+#side-img4:hover{
+    border: 3px solid #4e79d6;
+}
+.bottom-footer {
+    background-color: rgb(194, 198, 202);
+    margin-top: 20px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    border-top: 10px solid #4e79d6;
+    line-height: 25px;
+}
+#footer-txt{
+    margin: 0;
+    color: white;
+}
+
+#result-img{
+    width: 350px;
+    max-width: 100%;
+    
+}
+
+#summarytext{
+    background-color: white;
+    font-size: 10px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    align-content: normal;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.compimage{
+    height: 200px;
+    width: 300px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,td {
+    border: 1px solid black;
+    align-content: center;
+    position: right;
+}
+
+p{
+  font-size: 19px;
+  padding: 7px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  align-content: normal;  
+}
+
+.landingbox{
+    padding: 20px;
+    background: white;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    align-content: center;
+    position: relative;
+}
+
+.side-box{
+    background: white;
+    padding-top: 0px;
+    padding-bottom: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    align-content: center;
+    position: relative;
+}
+
+.sidebar{
+    position: relative;
+    height: 350px;
+    width: 385px;
+    align-content: center;
+}
+
+#side-img1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 160px;
+    width: 200px;
+    border: 3px solid white;
+}
+#side-img1:hover{
+    border: 3px solid #4e79d6;
+}
+
+#side-img2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 160px;
+    width: 200px;
+    border: 3px solid white;
+}
+
+#side-img2:hover{
+    border: 3px solid #4e79d6;
+}
+
+#side-img3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 160px;
+    width: 200px;
+    border: 3px solid white;
+}
+
+#side-img3:hover{
+    border: 3px solid #4e79d6;
+}
+
+#side-img4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 160px;
+    width: 200px;
+    border: 3px solid white;
+}
