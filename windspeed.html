@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+     
     <!-- Copied from https://getbootstrap.com/docs/3.3/getting-started/ -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
  
-    <title>Max Temperature</title>
+    <title>Windspeed</title>
 
 </head>
 <body class="body">
@@ -69,19 +69,20 @@
 
                 <div class="col-md-7">
                         <div class="main-box whiteback">
-                            <h1 class="main-pg-header">Max Temperature</h1>
+                            <h1 class="main-pg-header">Windspeed</h1>
                             <hr>
                             <div class="summarytxt">
-                                <img id="result-img" src="Images/latitude_vs_temperature_S.png" alt="Temp vs Latitude">
+                                <img id="result-img" src="Images/latitude_vs_winds_S.png" alt="Temp vs Latitude">
                                 <p>
-                                        It was clear the tendency of having higher Max temperatures with the proximity to the equator.
+                                        There was a slight tendency of observing higher wind speeds in higher latitudes. 
                                         <br><br>
-                                        There were interesting and expected variations to the trendline which were caused by the 
-                                        current season. Mid latitudes could have dispropotionally high temperatures due to the presence 
-                                        of desert-like climates. This observed effect was much higher in the northern hemisphere where 
-                                        the summer season would exarcebate this effect.
+                                        The pole caps are notoriously windy places, specially around the antartic ocean. 
+                                        This shows one of the limitations of this analysis, the API finds only populated places
+                                        therefore the regions closer to antartica have much less expression in the dataset. 
+                                        For Antartica itself there is no single data entry. 
+                                        If this was the case it would be expected to see a more obvious trend of higher winds with 
+                                        higher latitudes. 
                                         
-                                         
                                     </p>
                             </div>
                         </div>

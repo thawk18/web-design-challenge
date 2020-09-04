@@ -19,9 +19,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
- 
-    <title>Max Temperature</title>
 
+    <title>Latitude effect on Weather</title>
+   
 </head>
 <body class="body">
 
@@ -30,13 +30,12 @@
 
 <body>
         <nav class="navbar navbar-default">
-                <div class="container">
-                    <!--BEGIN ACTIVE NAVIGATION-->
+                <div class="container">  
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index.html"> 
                         <span class="nav-color navbaractive">Latitude</span></a>
                     </div>
-                    <!--END ACTIVE NAVIGATION-->
+                    
         
                     
                     <div class="nav navbar-nav navbar-right">
@@ -66,37 +65,32 @@
 
         <div class= "container">
             <div class= "row">
-
-                <div class="col-md-7">
-                        <div class="main-box whiteback">
-                            <h1 class="main-pg-header">Max Temperature</h1>
-                            <hr>
-                            <div class="summarytxt">
-                                <img id="result-img" src="Images/latitude_vs_temperature_S.png" alt="Temp vs Latitude">
-                                <p>
-                                        It was clear the tendency of having higher Max temperatures with the proximity to the equator.
-                                        <br><br>
-                                        There were interesting and expected variations to the trendline which were caused by the 
-                                        current season. Mid latitudes could have dispropotionally high temperatures due to the presence 
-                                        of desert-like climates. This observed effect was much higher in the northern hemisphere where 
-                                        the summer season would exarcebate this effect.
-                                        
-                                         
-                                    </p>
-                            </div>
-                        </div>
+                <div class= "col-md-7">
+                    <div class="main-box whiteback">
+                    <h1>Summary: Latitude vs Weather</h1>
+                    <hr>
+                    <div id="summarytext">
+                        <img id= "landingimage" src= "Images/latitude_vs_temperature_S.png" alt= "Temp vs Latitude">
+                        <p>
+                            The purpose of the project was to visualise the impact of the latitude on four different weather features:
+                            Max Temperature, Cloudiness, Wind Speed and Humidity. 
+                            More than 500 cities across the world were randomly selected through a Python library representing a sizable sample. 
+                            <br><br>
+                            Once the sample of cities was consolidated showing their coordinates, the four weather features were retrived for each city using the OpenWeatherMap API.
+                            The visulizations were reproduced using Matplotlib showing scatter plots of the whole sample comparing the latitude with each weather feature.
+                        </p>
                     </div>
-
-
+                    </div>
+                </div>
                 <div class= "col-md-5">
                     <div class= "side-box">
                     <h2 class= "main-pg-subheader">Visualisations</h2>
                     <hr>
                     <div class= "sidebar">
-                        <a href= "maxtemperature.html"><img id= "side-img1" src="Images/latitude_vs_temperature_S.png" alt= "Temp vs. Latitude Scatterplt"></a>
-                        <a href= "humidity.html"><img id= "side-img2" src= "Images/latitude_vs_humidity_S.png" alt= "Humidity vs. Latitude Scatterplt"></a>
-                        <a href= "cloudiness.html"><img id= "side-img3" src= "Images/latitude_vs_clouds_S.png" alt= "Cloudiness vs. Latitude Scatterplt"></a>
-                        <a href= "windspeed.html"><img id= "side-img4" src= "Images/latitude_vs_winds_S.png" alt= "Wind Speed vs. Latitude Scatterplt"></a>
+                        <a href= "maxtemperature.html"><img id= "side-img1" src="Images/latitude_vs_temperature_S.png" alt= "Temp vs. Latitude"></a>
+                        <a href= "humidity.html"><img id= "side-img2" src= "Images/latitude_vs_humidity_S.png", alt= "Humidity vs. Latitude"></a>
+                        <a href= "cloudiness.html"><img id= "side-img3" src= "Images/latitude_vs_clouds_S.png", alt= "Cloudiness vs. Latitude"></a>
+                        <a href= "windspeed.html"><img id= "side-img4" src= "Images/latitude_vs_winds_S.png", alt= "Wind Speed vs. Latitude"></a>
                         </div>
                     </div>
                 </div>
